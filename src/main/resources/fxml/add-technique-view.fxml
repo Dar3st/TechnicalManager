@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.techmanager.controllers.AddTechniqueController"
+      spacing="15" alignment="TOP_CENTER"
+      styleClass="form-container">
+
+    <Label text="Добавление новой техники" styleClass="form-title"/>
+
+    <GridPane hgap="10" vgap="10" styleClass="form-grid">
+        <Label text="ID:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="idField" promptText="Введите id"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Номер:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="numberField" promptText="Введите номер"
+                   GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Часы:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="hoursField" promptText="Введите часы"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <TextArea fx:id="areaInfo" wrapText="true" editable="false"
+              prefHeight="100" styleClass="info-area"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Добавить" onAction="#handleAddConfirm"
+                styleClass="action-button"/>
+        <Button text="Назад" onAction="#handleBack"
+                styleClass="action-button"/>
+    </HBox>
+
+</VBox>
