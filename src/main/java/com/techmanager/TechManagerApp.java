@@ -18,7 +18,7 @@ public class TechManagerApp extends Application {
         MainController controller = loader.getController();
         controller.setPrimaryStage(primaryStage);
 
-        Scene scene = new Scene(root, 400, 300);
+        Scene scene = new Scene(root, 800, 600);
         scene.getStylesheets().add(getClass().getResource("/css/styles.css").toExternalForm());
 
         primaryStage.setTitle("Технический табель");
