@@ -14,4 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>21.0.8</version> <!-- Укажите вашу версию -->
+    </dependency>
+
 </project>
